@@ -1,13 +1,14 @@
 #include <unistd.h>
 
 /**
- * main - prints "and that piece of art is useful" - Dora Korpar, 2015-10-19"
- * Return: 1.
- */
+* main - Entry point for program execution
+* Description: Print a string without using printf or puts
+* Return: 0. Program execution is a success
+*/
+
 int main(void)
 {
-	write(2,
-			"and that piece of art is useful\" - Dora kopar, 2015-10-19\n",
-			59);
-	return (1);
+char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, msg, 59);
+return (1);
 }
